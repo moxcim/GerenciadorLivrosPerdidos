@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-image: url("background.jpg");
+    background-size: 100%;
+    font-family: "Outfit", serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #4CAF50;
+    height: 5vh;
+    
+    align-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+    border-radius: 5px;
+}
+
+label {
+    font-size: calc(0.8vw + 0.5vh);
+
+    display: block;
+    margin-bottom: 5px;
+
+    left: 0;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    background-color: #4CAF50;
+
+    width: fit-content;
+}
+
+input{
+    width: 98%;
+    padding: 8px;
+    border: 0;
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+}
+
+input:active{
+    border: 0;
+}
+
+select{
+    width: 99%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 5px;
+}
+
+select:checked {
+    border: 0;
+}
+
+button {
+    font-family: "Outfit", serif;
+    font-size: calc(0.8vw + 0.5vh);
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #37913a;
+}
+
+.div_btn_tbl {
+    display: flex;
+
+    align-content: center;
+}
+
+.btn_tabela {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    margin-top: 40px;
+
+    left: 50%;
+    transform: translate(-50%, -0%);
+   
+    background-color: #4CAF50;
+    color: #ffffff;
+
+    font-size: 20px;
+}
+
+.btn_tabela:hover {
+    background-color: #37913a; 
+}
+
+table {
+    width: 100%;
+    color: #000;
+}
+
+table, td, th{
+    border: 3px #37913a solid;
+    border-collapse: collapse;
+
+    padding: 10px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+tr {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#formulario {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .3);
+
+    border-radius: 5px;
+
+}

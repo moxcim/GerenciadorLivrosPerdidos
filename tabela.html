@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Tabela</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <tbody>
+            <table id="listaLivros">
+                
+            </table>
+        </tbody>
+
+        <script>
+            const listaLivros = document.getElementById('listaLivros')
+
+            var qnt = localStorage.getItem('qnt')
+
+            const array = ['Titulo', 'Autor', 'Genero', 'Estado', 'Nome do Doador', 'Contato do Doador']
+
+            const tituloTabela = document.createElement('tr')
+
+            for (i = 0; i < 6; i++) {
+            const titulo = document.createElement('th')
+            titulo.innerHTML = array[i]
+
+            tituloTabela.appendChild(titulo);
+            }
+
+            listaLivros.appendChild(tituloTabela)
+
+            for (i = 0; i < qnt; i++) {
+            const titulo = localStorage.getItem('titulo'+i);
+            const autor = localStorage.getItem('autor'+i);
+            const genero = localStorage.getItem('genero'+i);
+            const estado = localStorage.getItem('estado'+i);
+            const nomeDoador = localStorage.getItem('nomeDoador'+i);
+            const contatoDoador = localStorage.getItem('contatoDoador'+i);
+
+            const linhaTabela = document.createElement('tr')
+            linhaTabela.innerHTML = `
+                <td>${titulo}</td>
+                <td>${autor}</td>
+                <td>${genero}</td>
+                <td>${estado}</td>
+                <td>${nomeDoador}</td>
+                <td>${contatoDoador}</td>
+            `
+
+            listaLivros.appendChild(linhaTabela);
+
+            }
+
+        </script>
+    </body>
+</html>
+
